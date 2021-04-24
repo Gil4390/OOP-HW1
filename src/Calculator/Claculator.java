@@ -3,7 +3,7 @@ import PolyMath.*;
 import PolyMath.Integer;
 
 
-public class Calculator {
+class Calculator {
 
     private static void printTitle(String s) {
         System.out.println("\n========== " + s + " ==========");
@@ -107,6 +107,12 @@ public class Calculator {
         printDerivate(p7, p7.derivative());
         printDerivate(p8, p8.derivative());
         printDerivate(p9, p9.derivative());
+
+        Integer i = new Integer(2);
+        Scalar s1 = new Rational(1,2);
+        Scalar s2 = new Integer(5);
+        Scalar sum1 = i.add(s1);
+        Scalar sum2 = i.add(s2);
 
     }
 }
