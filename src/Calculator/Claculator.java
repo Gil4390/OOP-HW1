@@ -1,6 +1,7 @@
 package Calculator;
 import PolyMath.*;
 import PolyMath.Integer;
+import com.sun.corba.se.impl.protocol.POALocalCRDImpl;
 
 
 class Calculator {
@@ -83,7 +84,7 @@ class Calculator {
         printEval(p2, r, p2.evaluate(r));
         printEval(p3, r, p3.evaluate(r));
         printEval(p4, r, p4.evaluate(r));
-        Scalar q = new Rational(0, 0);
+        Scalar q = new Rational(0, 1);
         printEval(p5, q, p5.evaluate(q));
         printEval(p6, q, p6.evaluate(q));
         printEval(p7, q, p7.evaluate(q));
