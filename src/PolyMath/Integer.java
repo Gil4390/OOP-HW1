@@ -8,30 +8,12 @@ public class Integer implements Scalar{
         number = n;
     }
 
-    private boolean isRational(Scalar s){
-        if(s == null)
-            throw new NullPointerException("Scalar cannot be null");
-        return s.toString().contains("/");
-    }
-
     @Override
     public Scalar add(Scalar s) {
 
         if(s == null)
             throw new NullPointerException("Scalar cannot be null");
-//        if(isRational(s)){
-//            return s.addRational(new Rational(number, 1));
-//        }
-//        else {
-//            return s.addInteger(this);
-//        }
 
-        try{
-            return s.addRational(new Rational(number, 1));
-        }
-        catch(Exception e){
-
-        }
         return s.addInteger(this);
     }
 
@@ -47,24 +29,11 @@ public class Integer implements Scalar{
         return new Integer(s.getNumber() + this.getNumber());
     }
 
-
     @Override
     public Scalar mul(Scalar s) {
         if(s == null)
             throw new NullPointerException("Scalar cannot be null");
-//        if(isRational(s)){
-//            return s.mulRational(new Rational(number, 1));
-//        }
-//        else {
-//            return s.mulInteger(this);
-//        }
 
-        try{
-            return s.mulRational(new Rational(number, 1));
-        }
-        catch(Exception e){
-
-        }
         return s.mulInteger(this);
     }
     @Override
