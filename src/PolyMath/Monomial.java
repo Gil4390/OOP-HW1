@@ -18,7 +18,7 @@ public class Monomial {
         if(m == null)
             throw new NullPointerException("Monomial cannot be null");
         if(exponent == m.getExponent()){
-            return new Monomial(exponent ,coefficient.add(m.coefficient));
+            return new Monomial(exponent ,coefficient.add(m.getCoefficient()));
         }
         else
             return null;
@@ -28,7 +28,7 @@ public class Monomial {
     public Monomial mult(Monomial m){
         if(m == null)
             throw new NullPointerException("Monomial cannot be null");
-        return new Monomial(exponent+m.exponent ,coefficient.mul(m.coefficient));
+        return new Monomial(exponent+m.exponent ,coefficient.mul(m.getCoefficient()));
     }
 
     public Scalar evaluate(Scalar s){

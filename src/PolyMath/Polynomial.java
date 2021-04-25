@@ -6,7 +6,6 @@ public class Polynomial {
 
     private Monomial[] monomials;
 
-
     public Polynomial(Monomial[] mono){
         monomials = mono;
     }

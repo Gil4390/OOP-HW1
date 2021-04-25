@@ -35,7 +35,7 @@ public class Rational implements Scalar{
     public Scalar addInteger(Integer s){
         if(s == null)
             throw new NullPointerException("Integer cannot be null");
-        return s.add(this);
+        return s.addRational(this);
     }
 
 
@@ -59,7 +59,7 @@ public class Rational implements Scalar{
     public Scalar mulInteger(Integer s) {
         if(s == null)
             throw new NullPointerException("Integer cannot be null");
-        return s.mul(this);
+        return s.mulRational(this);
     }
 
 
