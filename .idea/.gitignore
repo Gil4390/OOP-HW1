@@ -1,3 +1,11 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+<<<<<<< HEAD
+=======
+# Datasource local storage ignored files
+/../../../../../../../../:\Amit Ganon\Software Engineering\סמסטר ב\תכנות מונחה עצמים\עבודה 1\OOP-HW1\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+>>>>>>> 2724dd52d67b795c9667d7f12c2e5f8467995f0b
